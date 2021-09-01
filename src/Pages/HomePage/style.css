@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.question {
+  margin: 10px;
+  font-weight: normal;
+  font-size: x-large;
+}
+
+.calculateButton {
+  width: 12rem;
+  height: 3rem;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: orange;
+  background-color: black;
+  border-radius: 7px;
+}
+
+.HomePage {
+  padding: 120px;
+  text-align: center;
+}
+
+.label {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.textField {
+  width: 20rem;
+  height: 2rem;
+  border-radius: 7px;
+  margin-top: 7px;
+  text-align: left;
+}
