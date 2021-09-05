@@ -9,14 +9,12 @@ export default function trocador(valorTotal, valorPago, picks) {
     }
   }
 
-  // Initialize result
   let qtd = {};
 
-  // Traverse through all denomination
   for (let i = pickValues.length - 1; i >= 0; i--) {
-    // Find denominations
     while (troco >= pickValues[i]) {
       troco -= pickValues[i];
+
       qtd[pickValues[i]] === undefined
         ? (qtd[pickValues[i]] = 1)
         : (qtd[pickValues[i]] += 1);

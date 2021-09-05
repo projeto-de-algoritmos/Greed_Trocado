@@ -32,7 +32,7 @@ const singular = {
   100: "moeda de 1 real",
 };
 
-function Materiator(history) {
+function Trocado(history) {
   let total = history.location.state.total;
   let pago = history.location.state.pago;
   let picks = history.location.state.picks;
@@ -57,7 +57,6 @@ function Materiator(history) {
           <div className="result">
             {" "}
             {key[1]} {key[1] > 1 ? plural[key[0]] : singular[key[0]]}
-            <br></br>
           </div>
         );
       })}
@@ -80,4 +79,4 @@ function Materiator(history) {
   );
 }
 
-export default Materiator;
+export default Trocado;

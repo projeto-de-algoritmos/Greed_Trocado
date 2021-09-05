@@ -57,7 +57,7 @@ function HomePage() {
       });
     } else {
       history.push({
-        pathname: "/materiator",
+        pathname: "/trocado",
         state: {
           total: total,
           pago: pago,
