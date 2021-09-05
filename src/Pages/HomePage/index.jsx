@@ -46,14 +46,12 @@ function HomePage() {
     setModal({ show: false });
   }
 
-  function handleSubmit(event) {
+  function handleSubmit() {
     if (total <= 0 || pago <= 0 || pago < total) {
       setModal({
         show: true,
       });
     } else {
-      event.preventDefault();
-
       history.push({
         pathname: "/materiator",
         state: {
@@ -91,7 +89,7 @@ function HomePage() {
       <br />
       <br />
 
-      <form onSubmit={handleSubmit}>
+      <div>
         <label className="label">
           Valor total (R$):
           <br />
@@ -131,8 +129,11 @@ function HomePage() {
           </div>
           <br />
         </label>
-        <input className="calculateButton" type="submit" value="Calcular" />
-      </form>
+        <button className="calculateButton" onClick={handleSubmit}>
+          {" "}
+          Trocar
+        </button>
+      </div>
 
       <Modal
         open={modal.show}
