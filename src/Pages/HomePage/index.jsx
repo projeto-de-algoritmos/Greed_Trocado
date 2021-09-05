@@ -47,7 +47,11 @@ function HomePage() {
   }
 
   function handleSubmit() {
-    if (total <= 0 || pago <= 0 || parseFloat(pago) < parseFloat(total)) {
+    if (
+      parseFloat(total) <= 0.0 ||
+      parseFloat(pago) <= 0.0 ||
+      parseFloat(pago) < parseFloat(total)
+    ) {
       setModal({
         show: true,
       });

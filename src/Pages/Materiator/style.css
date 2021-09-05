@@ -3,12 +3,13 @@
   padding: 0;
 }
 
-.question {
-  margin-top: 2rem;
+.title {
+  margin: 1rem;
   text-align: center;
 }
 
-.mountButton {
+.calculateButton {
+  margin: 2rem;
   width: 10rem;
   height: 2.5rem;
   font-size: 20px;
@@ -16,4 +17,21 @@
   color: orange;
   background-color: black;
   border-radius: 7px;
+}
+
+.result {
+  background-color: antiquewhite;
+  width: 20rem;
+  height: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.resultArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
