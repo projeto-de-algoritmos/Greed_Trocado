@@ -40,6 +40,7 @@ function Priorities(history) {
               </div>
             );
           }
+          return <></>;
         })}
       </div>
     </>
