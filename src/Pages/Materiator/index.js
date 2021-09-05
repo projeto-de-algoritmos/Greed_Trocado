@@ -50,9 +50,10 @@ function Materiator(history) {
   return (
     <div className="resultArea">
       <h1 className="title"> Troco: </h1>
-
       {Object.entries(resultado).map((key, value) => {
-        return (
+        return key[0] == "restante" ? (
+          <></>
+        ) : (
           <div className="result">
             {" "}
             {key[1]} {key[1] > 1 ? plural[key[0]] : singular[key[0]]}
@@ -60,6 +61,16 @@ function Materiator(history) {
           </div>
         );
       })}
+
+      {resultado["restante"] > 0 ? (
+        <div className="missing">
+          {" "}
+          Restaram R${resultado["restante"] / 100} que não podem ser trocados
+          <br></br>
+        </div>
+      ) : (
+        <></>
+      )}
 
       <button className="calculateButton" onClick={goToHome}>
         {" "}

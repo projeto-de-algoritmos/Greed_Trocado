@@ -23,6 +23,8 @@ export default function trocador(valorTotal, valorPago, picks) {
     }
   }
 
+  qtd["restante"] = troco;
+
   return qtd;
 }
 
