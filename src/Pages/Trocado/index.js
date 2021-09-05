@@ -61,7 +61,7 @@ function Trocado(history) {
         );
       })}
 
-      {resultado["restante"] > 0 ? (
+      {resultado["restante"] > 0.01 ? (
         <div className="missing">
           {" "}
           Restaram R${resultado["restante"] / 100} que não podem ser trocados

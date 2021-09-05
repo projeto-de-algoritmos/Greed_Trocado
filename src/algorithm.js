@@ -1,5 +1,5 @@
 export default function trocador(valorTotal, valorPago, picks) {
-  let troco = (valorPago - valorTotal) * 100;
+  let troco = ((valorPago - valorTotal) * 100).toFixed(2);
 
   let pickValues = [];
 
