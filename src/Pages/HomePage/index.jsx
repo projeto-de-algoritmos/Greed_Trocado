@@ -23,18 +23,18 @@ function HomePage() {
   const [total, setTotal] = React.useState();
   const [pago, setPago] = React.useState();
   const [picks, setPicks] = React.useState({
-    moeda1: false,
-    moeda5: false,
-    moeda10: false,
-    moeda25: false,
-    moeda50: false,
-    moeda100: false,
-    nota2: false,
-    nota5: false,
-    nota10: false,
-    nota20: false,
-    nota50: false,
-    nota100: false,
+    moeda1: true,
+    moeda5: true,
+    moeda10: true,
+    moeda25: true,
+    moeda50: true,
+    moeda100: true,
+    nota2: true,
+    nota5: true,
+    nota10: true,
+    nota20: true,
+    nota50: true,
+    nota100: true,
   });
 
   const [modal, setModal] = React.useState({
@@ -47,7 +47,7 @@ function HomePage() {
   }
 
   function handleSubmit() {
-    if (total <= 0 || pago <= 0 || pago < total) {
+    if (total <= 0 || pago <= 0 || parseFloat(pago) < parseFloat(total)) {
       setModal({
         show: true,
       });
@@ -119,9 +119,10 @@ function HomePage() {
                   <Checkbox
                     className="checkbox"
                     type="checkbox"
-                    value={value}
+                    value={picks[key[0]]}
                     name={key[0]}
                     onChange={handleCoinChange}
+                    defaultChecked={true}
                   />
                 </div>
               );
