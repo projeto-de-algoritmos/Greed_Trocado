@@ -14,7 +14,12 @@ O projeto tem como objetivo informar ao usuário como dar o troco  de uma compra
 O resultado será uma lista de moedas/notas que o usuário deve utilizar para dar o troco.
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+![image](https://user-images.githubusercontent.com/54086083/132143427-bdd6740a-1dbf-4678-8364-e857b62044cc.png)
+
+![image](https://user-images.githubusercontent.com/54086083/132143434-cb8a5778-3a62-4245-8f4e-f8f6d3c94051.png)
+
+![image](https://user-images.githubusercontent.com/54086083/132143441-5118fd2e-a488-4fac-b0f6-da22ec1499b4.png)
+
 
 ## Instalação 
 **Linguagem**: Javascript<br>
@@ -25,7 +30,7 @@ Para rodar o projeto localmente, é necessário possuir npm instalado
 Primeiramente clone o repositório em sua máquina local.
 
 ```
-git clone https://github.com/projeto-de-algoritmos/Grafos2_PlayWays.git
+git clone https://github.com/projeto-de-algoritmos/Greed_Trocado.git
 ```
 
 Rode o comando a seguir para instalar as depêndencias
@@ -43,11 +48,6 @@ npm start
 O projeto estará em execução no endereço `localhost:3000`
 
 
-## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
-
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
 
 
 
