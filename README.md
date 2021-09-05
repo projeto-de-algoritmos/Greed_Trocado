@@ -10,7 +10,8 @@
 | 18/0013637  |  Arthur Paiva Tavares |
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+O projeto tem como objetivo informar ao usuário como dar o troco  de uma compra utilizando o menor número de moedas/notas possível. Para utilizá-lo, é necessário informar o valor total a ser pago e o valor pago. Após isso, selecione as moedas e notas que você possui e clique em "Trocar".
+O resultado será uma lista de moedas/notas que o usuário deve utilizar para dar o troco.
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em funcionamento.
